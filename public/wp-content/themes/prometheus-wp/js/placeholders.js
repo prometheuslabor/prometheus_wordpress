@@ -1,0 +1,1 @@
+jQuery("input").each(function(i, el) {var el = jQuery(el); var placeholder = el.attr("placeholder"); if(placeholder !== undefined) { el.val(placeholder); el.on("blur", function(e) {if(el.val() == "") {el.val(placeholder); } }).on("click", function(e) { if(el.val() == placeholder) { el.val(""); } } ); }});

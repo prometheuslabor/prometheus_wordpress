@@ -1,0 +1,216 @@
+/*
+Theme Name:     Blocomo
+Theme URI:      http://blocomo.com/blocomo-theme/
+Description:    Child-Theme of Twenty Twelve - The 2012 theme for WordPress is a fully responsive theme that looks great on any device. Features include a front page template with its own widgets, an optional display font, styling for post formats on both index and single views, and an optional no-sidebar page template. Make it yours with a custom menu, header image (which unlike its parent will display above the navigation area), and background. 
+Author:         Christopher Bergmann
+Author URI:     http://blocomo.com
+Template:       twentytwelve
+Version:        1.1
+Tags: 		custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, flexible-width, full-width-template, gray, red, light, microformats, one-column, post-formats, right-sidebar, rtl-language-support, sticky-post, theme-options, translation-ready, two-columns, white
+License: 	GNU General Public License v2.0
+License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import url("../twentytwelve/style.css");
+
+body{
+	background-color: #c4bebe;
+	background-image: url(background.jpg);
+	background-repeat: repeat-x;
+}
+
+#page{
+	border: 6px solid #cccccc;
+	border-radius: 5px; /* CSS3 */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+	-o-border-radius: 5px; /* Opera */
+	-khtml-border-radius: 5px; /* Konqueror */
+}
+
+a {
+	color: #5e5e5e;
+}
+
+a:hover{
+	color: #c00000;
+}
+
+header a:hover {
+	color: #c00000;
+}
+
+.site-header h1 a:hover,
+.site-header h2 a:hover {
+	color: #c00000;
+}
+
+.main-navigation li a:hover {
+	color: #c00000;
+}
+
+#main article{
+	-moz-box-shadow:    0px 0px 2px 2px #ccc;
+	-webkit-box-shadow: 0px 0px 2px 2px #ccc;
+	box-shadow:         0px 0px 2px 2px #ccc;
+	padding: 10px;
+	padding: 0.714285714rem;
+	border-radius: 5px; /* CSS3 */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+	-o-border-radius: 5px; /* Opera */
+	-khtml-border-radius: 5px; /* Konqueror */
+}
+
+#secondary aside{
+	-moz-box-shadow:    0px 0px 2px 2px #ccc;
+	-webkit-box-shadow: 0px 0px 2px 2px #ccc;
+	box-shadow:         0px 0px 2px 2px #ccc;
+	padding: 5px;
+	padding: 0.357142857rem;
+	background-color: #fff;
+	border-radius: 5px; /* CSS3 */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+	-o-border-radius: 5px; /* Opera */
+	-khtml-border-radius: 5px; /* Konqueror */
+}
+
+#secondary aside ul{
+	background-color: #e5e5e5;
+	padding-left: 5px;
+	padding-left: 0.357142857rem;
+}
+
+#secondary aside form{
+	background-color: #e5e5e5;
+	padding: 5px;
+	padding: 0.357142857rem;
+}
+
+.site-content article {
+	margin-bottom: 24px;
+	margin-bottom: 1.714285714rem;
+}
+
+article a  {
+	color: #444444;
+}
+
+.entry-title {
+	background-color: #ccc;
+	padding: 10px;
+	padding: 0.714285714rem;
+	border-bottom: 3px solid #c00000;
+	margin: 0;
+}
+
+.entry-header{
+	padding: 0;
+	margin: 0;
+}
+
+.entry-header .comments-link{
+	margin-top: 10px;
+	margin-top: 0.714285714rem;
+}
+
+.entry-content{
+	margin: 0;
+	padding-top: 10px;
+	padding-top: 0.714285714rem;
+}
+
+.entry-content p{
+	margin-bottom: 0;
+}
+
+.entry-summary{
+	margin: 0;
+	padding-top: 10px;
+	padding-top: 0.714285714rem;
+}
+
+.entry-summary p{
+	margin-bottom: 0;
+}
+
+footer.entry-meta {
+	margin-top: 10px;
+	margin-top: 0.714285714rem;
+}
+
+#content{
+	background-color: #fff;
+}
+
+li.bypostauthor cite span {	
+	color: #5e5e5e;
+	background-color: #e5e5e5;
+	border: 1px solid #c00000;	
+}
+
+.comments-link a:hover,
+.entry-meta a:hover {
+	color: #c00000;
+}
+
+.comments-area article header a:hover {
+	color: #c00000;
+}
+
+a.comment-reply-link:hover,
+a.comment-edit-link:hover {
+	color: #c00000;
+}
+
+.nav-single + .comments-area,
+#comment-nav-above {
+	margin: 24px 0;
+	margin: 1.714285714rem 0;
+}
+
+#respond {
+	margin-top: 24px;
+	margin-top: 1.714285714rem;
+}
+
+.comments-title{
+	margin-bottom: 10px;
+	margin-bottom: 0.714285714rem;
+}
+
+.comments-area article header{
+	margin-bottom: 10px;
+	margin-bottom: 0.714285714rem;
+}
+
+.comment-content p{
+	margin: 0;
+	padding-top: 10px;
+	padding-top: 0.714285714rem;
+}
+
+.widget-title{
+	background-color: #ccc;
+	padding-left: 5px;
+	padding-left: 0.357142857rem;
+}
+
+.widget-area .widget {
+	margin-bottom: 24px;				   
+	margin-bottom: 1.71428571rem;
+}
+
+.widget-area .widget h3{
+	margin-bottom: 0px;
+	border-bottom: 2px solid #c00000;
+}
+
+.widget-area .widget a:hover {
+	color: #c00000;
+}
+
+footer[role="contentinfo"] a:hover {
+	color: #c00000;
+}

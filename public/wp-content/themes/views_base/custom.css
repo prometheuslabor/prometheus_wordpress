@@ -1,0 +1,7 @@
+#two-col-footer > div {
+width:50%;
+float:left;
+}
+#comments, .comments-link, .by-author span.sep  {
+display:none;
+}

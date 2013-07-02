@@ -1,0 +1,779 @@
+/**
+ * Styles for Prometheus Labor Wordpress Theme.
+ * By Morris Singer (http://www.morrissinger.com)
+ */
+
+@import "compass/css3/border-radius";
+@import "compass/css3/images";
+@import "compass/css3/box-shadow";
+@import "compass/css3/text-shadow";
+
+@import "variables";
+
+html {
+	margin-top: 0 !important;
+	body {
+		background: $body-background-color !important;
+
+		a {
+			color: $accent-color;
+		}
+		a:hover, a:visited {
+			text-decoration: none;
+			color: $body-link-color;
+		}
+		a.btn-inverse:visited {
+			color: white;
+		}
+		p {
+			font-weight: 200;
+			line-height: 32px;
+			font-size: 16px;
+		}
+		#page {
+			padding-top: 0;
+			padding-bottom: 0;
+			background: none;
+			#primary, #secondary, #slideshow, #feature {
+				h1 {
+					font-size: 56px;
+					line-height: 60px;
+					@media (min-width: 768px) and (max-width: 979px) {
+						font-size: 50px;
+						line-height: 54px;
+					}					
+					@media (max-width: 767px) {
+						font-size: 46px;
+						line-height: 50px;
+					}
+				}
+				h2 {
+					font-size: 52px;
+					line-height: 56px;
+					@media (min-width: 768px) and (max-width: 979px) {
+						line-height: 50px;					
+						font-size: 46px;
+					}					
+					@media (max-width: 767px) {
+						line-height: 46px;
+						font-size: 42px;
+					}
+				}
+				h3 {
+					font-size: 48px;
+					line-height: 52px;
+					@media (min-width: 768px) and (max-width: 979px) {
+						font-size: 42px;
+						line-height: 46px;
+					}					
+					@media (max-width: 767px) {
+						line-height: 42px;
+						font-size: 38px;
+					}
+				}
+				h4 {
+					font-size: 44px;
+					line-height: 48px;
+					@media (min-width: 768px) and (max-width: 979px) {
+						font-size: 38px;
+						line-height: 42px;
+					}					
+					@media (max-width: 767px) {
+						font-size: 34px;
+						line-height: 38px;
+					}
+				}
+				h5 {
+					font-size: 40px;
+					line-height: 44px;
+					@media (min-width: 768px) and (max-width: 979px) {
+						font-size: 34px;
+						line-height: 38px;
+					}					
+					@media (max-width: 767px) {
+						font-size: 30px;
+						line-height: 34px;
+					}
+				}
+				h6 {
+					font-size: 36px;
+					line-height: 40px;
+					@media (min-width: 768px) and (max-width: 979px) {
+						font-size: 30px;
+						line-height: 34px;
+					}					
+					@media (max-width: 767px) {
+						font-size: 26px;
+						line-height: 30px;
+					}
+				}
+				h1, h2, h3, h4, h5, h6,
+				h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+					font-family: "Neuton";
+					font-weight: 400;
+					color: $body-h-color;
+					letter-spacing: -1px;
+
+					@if lightness($body-h-color) > 50% {
+						@include single-text-shadow(0, -1px, 0, 0, rgba(darken($body-h-color, 15%), 0.5));
+					} @else {
+						@include single-text-shadow(0, -1px, 0, 0, rgba(lighten($body-h-color, 15%), 0.5));
+					}
+
+					legend {
+						text-shadow: none;
+					}
+				}
+			}
+
+			@media (max-width: 767px) {
+				padding: 0;
+			}
+			@media (max-width: 778px) and (min-width: 768px) {
+				margin-right: -20px;
+			}
+			@media (min-width: 1200px) {}
+
+			#slideshow {
+				margin-bottom: 20px;
+				overflow: hidden;
+				@media (max-width: 767px) {
+					margin-bottom: 0;
+					display: none;
+				}
+				.slideshow_slide_image {
+					overflow: hidden;
+					img {
+						height: auto !important;
+						width: 100% !important;
+						box-sizing: border-box;
+					}
+				}
+
+				.slideshow_description {
+					opacity: 0.8;
+					@if lightness($feature-h-color) > 50% {
+						background: lighten($feature-h-color, 50%);
+					} @else {
+						background: darken($feature-h-color, 50%);
+					}
+
+					h2 {
+						padding: 0;
+						line-height: 1.25em;
+						a {
+							text-shadow: none;
+
+							@if lightness($feature-h-color) > 50% {
+								color: darken($feature-h-color, 50%);
+							} @else {
+								color: lighten($feature-h-color, 50%);
+							}
+						}
+					}
+					p {
+						padding: 0 0 25px 0;
+						a {
+							@if lightness($feature-h-color) > 50% {
+								color: #333;
+							} @else {
+								color: #f7f7f7;
+							}
+						}
+					}
+				}
+			}
+			#feature {
+				height: 265px;
+				@media (min-width: 1200px) {
+					height: 329px;
+				}
+				@media (min-width: 767px) and (max-width: 979px) {
+					height: 203px;
+				}
+				@media (max-width: 767px) {
+					height: auto;
+				}
+				margin-bottom: 20px;
+				overflow: hidden;
+				background: $feature-base-color;
+				color: $feature-text-color;
+				h3 {
+					color: $feature-h-color;
+					font-size: 54px !important;
+					@media (min-width: 768px) and (max-width: 979px) {
+						font-size: 50px;
+					}
+					@media (max-width: 767px) {
+						font-size: 44px;
+					}
+					@include single-text-shadow(0, -1px, 0, 0, rgba(darken($feature-h-color, 15%), 0.25));
+				}
+
+				@if $slideshow-space == 'true' {
+					@media (max-width: 767px) {
+						margin-top: 20px;
+					}
+				} @else {
+					width: 480px;
+					margin-left: 0;
+
+					@media (max-width: 767px) {
+						width: 100%;
+						height: auto;
+						margin-bottom: 20px;
+					}
+					@media (max-width: 979px) and (min-width: 768px) {
+						width: 372px;
+					}
+					@media (min-width: 1200px) {
+						width: 600px;
+					}
+				}
+
+				aside {
+					padding: 20px;
+
+					h3 {
+						margin-bottom: 20px;
+
+						@media (max-width: 767px) {
+							font-size: 40px;
+						}
+						@media (max-width: 979px) and (min-width: 768px) {
+							font-size: 30px;
+						}
+						@media (min-width: 1200px) {
+							font-size: 40px;
+						}
+					}
+					div {
+						font-size: 20px;
+						font-weight: 200;
+						line-height: 40px;
+						
+						@media (max-width: 767px) {
+							font-size: inherit;
+						}
+						@media (max-width: 979px) and (min-width: 768px) {
+							font-size: 18px;
+						}
+					}
+				}
+			}			
+			#primary {
+				background: #fff;
+				margin-bottom: 20px;
+
+				@include single-box-shadow(rgba(0,0,0,0.03), 0, 0, 30px, 0, inset);
+
+				@if $use-block-shadows == 'true' {
+					@include box-shadow(
+						single-box-shadow(rgba(0,0,0,0.07), 0, 0, 30px, 0), 
+						single-box-shadow(rgba(0,0,0,0.03), 0, 0, 30px, 0, inset)
+					);
+				}
+
+				#content {
+					padding: 20px;
+					article {
+						div.entry-content {
+							a.thumbnail {
+								width: 235px;
+
+								@media (max-width: 480px) {
+									width: 100%;
+									float: none;
+								}
+								@if $photo-float == 'left' {
+									float: left;
+									margin-right: 20px;
+								} @elseif $photo-float == 'right' {
+									float: right;
+									margin-left: 20px;
+								} @else {
+									float: none;
+								}
+							}
+							footer {
+								background: #f7f7f7;
+								border-top: 1px solid #ddd;
+								@include border-bottom-left-radius(3px);
+								@include border-bottom-right-radius(3px);
+								overflow: hidden;
+								padding: 10px;
+								.cat-links.block {
+									font-size: 0.9em;
+									display: inline-block;
+									padding-left: 10px;
+									margin-left: 10px;
+									border-left: 1px solid #ccc;
+								}
+							}
+						}
+					}
+				}
+			}
+			#secondary {
+				aside {
+					a {
+						color: $sidebar-link-color;
+						&:hover {
+							color: lighten($sidebar-link-color, 10%);
+						}
+						&:visited {
+							color: darken($sidebar-link-color, 10%);
+						}
+					}
+					img {
+						width: 100% !important;
+					}
+					&.well {
+						font-size: 13px;
+						font-weight: 200;
+
+						h1 {
+							font-weight: 400;
+							font-size: 44px;
+						}
+						h2 {
+							font-weight: 400;
+							font-size: 40px;
+						}
+						h3 {
+							font-weight: 400;
+							font-size: 36px;
+						}
+						h4 {
+							font-weight: 400;
+							font-size: 32px;
+						}
+						h5 {
+							font-weight: 400;
+							font-size: 28px;
+						}
+						h6 {
+							font-weight: 400;
+							font-size: 24px;					
+						}
+						h1, h2, h3, h4, h5, h6 {
+							color: $sidebar-title-color;
+						}
+						@if $use-block-shadows == 'true' {
+							@include single-box-shadow(rgba(0,0,0,0.2), 0, 0, 10px, 0);
+						}
+						background: $sidebar-block-background-color;
+
+						@if lightness($base-color) > 50% {
+							border: 10px solid darken(rgba($base-color, 0.2), 20%);
+						} @else {
+							border: 10px solid rgba($base-color, 0.2);
+						}
+						border-radius: 0px;
+					}
+				}
+			}
+		}
+
+		header#branding,
+		footer#colophon {
+			width: 100%;
+			margin: 0;
+			background-color: $header-footer-color;
+
+			@if lightness($header-footer-color) > 50%  {
+				@include background(linear-gradient(top, $header-footer-color, darken($header-footer-color, 10%)));
+			} @else {
+				@include background(linear-gradient(top, $header-footer-color, lighten($header-footer-color, 10%)));
+			}
+
+			@media (max-width: 767px) {
+				width: 100%;
+			}
+			@media (max-width: 979px) and (min-width: 768px) {
+				width: 100%;
+			}
+			@media (min-width: 1200px) {
+				width: 100%;
+			}
+		}
+		header#branding {
+			margin: -20px 0 20px 0;
+			padding-top: 20px;
+
+			@if $user-header-image == 'true' {
+				background: $header-background-color;
+				a#header-image {
+					text-align: $header-image-alignment;
+					margin-bottom: 0;
+				}
+			}
+
+			@media (max-width: 767px) {
+				margin-top: 0;
+			}
+			@if $slideshow-space == 'false' {
+				margin-bottom: 0;
+			}
+
+			hgroup {
+				padding: 10px;
+			}
+			#header-above {
+				margin-top: 10px;
+				#search-2 {
+					float: right;
+				}
+			}
+			.navbar {
+				margin-bottom: 0;
+				.navbar-inner {
+					@include border-radius(0);
+					background: $navbar-color;
+					@if lightness($base-color) > 50% {
+						@include background(linear-gradient(top, $navbar-color, darken($navbar-color, 5%)));
+					} @else {
+						@include background(linear-gradient(top, $navbar-color, lighten($navbar-color, 5%)));
+					} 
+					border: 0;
+					.nav-collapse {
+						line-height: 10px;
+						text-align: center;
+
+						a.btn-navbar {
+							@if lightness($navbar-color) > 50% {
+								background: lighten($navbar-color, 5%);
+								@include background(linear-gradient(top, lighten($navbar-color, 5%), darken($navbar-color, 10%)));
+							} @else {
+								background-color: darken($navbar-color, 10%);
+								@include background(linear-gradient(top, darken($navbar-color, 10%), darken($navbar-color, 15%)));
+							} 						
+						}
+						ul.nav {
+							display: inline-block;
+							float: none;
+							margin: 0;
+
+							li.menu-item {
+								@if lightness($navbar-color) > 50% {
+									border-right: 1px solid rgba(darken($navbar-color, 10%), 0.6);
+									border-left: 1px solid rgba(darken($navbar-color, 20%), 0.6);
+								} @else {
+									border-left: 1px solid rgba(lighten($navbar-color, 10%), 0.6);
+									border-right: 1px solid rgba(darken($navbar-color, 10%), 0.6);
+								}
+								font-size: 14px;
+								a {
+									color: $navbar-link-color;
+									@if lightness($navbar-link-color) > 50% {
+										@include single-text-shadow(0, -1px, 0, 0, rgba(darken($navbar-link-color, 80%), 0.5));
+									} @else {
+										@include single-text-shadow(0, -1px, 0, 0, rgba(lighten($navbar-link-color, 20%), 0.25));
+									}
+									font-weight: bold;
+									text-transform: uppercase;
+									
+									b.caret {
+										@if lightness($navbar-color) > 50% {
+											border-top-color: desaturate(darken($navbar-color, 20%), 5%);
+											border-bottom-color: desaturate(darken($navbar-color, 20%), 5%);
+										} @else {
+											border-top-color: desaturate(lighten($navbar-color, 10%), 5%);
+											border-bottom-color: desaturate(lighten($navbar-color, 10%), 5%);
+										}
+									}
+								}
+								a:hover,
+								&.open a,
+								&.active a {
+									@if lightness($navbar-color) > 50% {
+										background-color: desaturate(darken($navbar-color, 20%), 5%);
+									} @else {
+										background-color: desaturate(lighten($navbar-color, 10%), 5%);
+									}
+									b.caret {
+										@if lightness($navbar-color) > 50% {
+											border-top-color: desaturate(darken($navbar-color, 0%), 5%);
+											border-bottom-color: desaturate(darken($navbar-color, 0%), 5%);
+										} @else {
+											border-top-color: desaturate(lighten($navbar-color, 0%), 5%);
+											border-bottom-color: desaturate(lighten($navbar-color, 0%), 5%);
+										}
+									}
+								}
+								ul.dropdown-menu {
+									@include border-radius(0);
+									margin-top: 0;
+									border: 0;
+
+									background: lighten($navbar-color, 5%);
+									@include background(linear-gradient(top, lighten($navbar-color, 5%), darken($navbar-color, 10%)));
+
+									&:before {
+										content: '';
+										display: none;
+									}
+									&:after {
+										content: '';
+										display: none;
+									}
+									a {
+										background: $navbar-color;
+										@if lightness($navbar-color) > 50% {
+											@include background(linear-gradient(top, $navbar-color, darken($navbar-color, 5%)));
+										} @else {
+											@include background(linear-gradient(top, $navbar-color, lighten($navbar-color, 5%)));
+										} 
+									}
+									a:hover {
+										@if lightness($navbar-color) > 50% {
+											background: desaturate(darken($navbar-color, 20%), 5%);
+										} @else {
+											background: desaturate(lighten($navbar-color, 10%), 5%);
+										}
+									}
+								}
+							}
+							li.menu-item:first-child {
+								border-left: 0;
+							}
+							li.menu-item:last-child {
+								border-right: 0;
+							}
+						}
+					}
+				}
+			}
+			h1#site-title {
+				margin: 0;
+				padding-top: 20px;
+				font-size: 64px;
+				@media (max-width: 480px) {
+					font-size: 28px;
+				}			
+				@media (min-width: 481px) and (max-width: 767px) {
+					font-size: 44px;
+				}
+				@if lightness($accent-color) > 50%  {
+					@include single-text-shadow(0, -1px, 0, 0, darken(desaturate($accent-color, 40%), 20%));
+				} @else {
+					@include single-text-shadow(0, -1px, 0, 0, lighten(desaturate($accent-color, 90%), 20%));
+				}
+			}
+
+			h1#site-title a, h1#site-title a:hover, h1#site-title a:visited {
+				@if lightness($accent-color) > 50%  {
+					color: darken(desaturate($accent-color, 40%), 55%);
+				} @else {
+					color: lighten(desaturate($accent-color, 90%), 85%);
+				}
+			}
+
+			h2#site-description {
+				font-size: 18px;
+				font-weight: normal;
+				@if lightness($accent-color) > 50%  {
+					color: darken(desaturate($accent-color, 90%), 75%);
+				} @else {
+					color: lighten(desaturate($accent-color, 90%), 75%);
+				}
+			}
+
+			img.span9 {
+				width: 680px;
+
+				@media (min-width: 1200px) {
+					width: 840px;
+				}
+				@media (max-width: 979px) and (min-width: 768px) {
+					width: 518px;
+				}
+			}
+
+		}
+		footer#colophon {
+			padding-top: 40px;
+			padding-bottom: 20px;
+			margin-bottom: -20px;
+			#page-footer {
+				padding: 20px;
+			}
+
+			@if lightness($header-footer-color) > 50%  {
+				color: darken(desaturate($header-footer-color, 20%), 40%);
+				a, a:visited {
+					color: darken(desaturate($header-footer-color, 20%), 40%);
+					border-bottom: 1px dotted darken(desaturate($header-footer-color, 20%), 40%);
+				}
+				a:hover {
+					text-decoration: none;
+					color: darken(desaturate($accent-color, 20%), 80%);
+				}
+			} @else {
+				color: lighten(desaturate($header-footer-color, 20%), 60%);
+				a, a:visited {
+					color: lighten(desaturate($header-footer-color, 20%), 60%);
+					border-bottom: 1px dotted lighten(desaturate($header-footer-color, 20%), 60%);
+				}
+				a:hover {
+					text-decoration: none;
+					color: lighten(desaturate($header-footer-color, 20%), 80%);
+				}
+			}
+			.prometheus-colophon {
+				font-size: 0.9em;
+				margin-top: 15px;
+			}
+		}
+	}
+}
+
+.sexy_login_widget {
+	margin: 10px;
+	padding: 10px;
+	background: darken($base-color, 15%);
+	box-sizing: border-box;	
+	position: relative;
+
+	h4 {
+		font-size: 28px;
+		color: #fafafa;
+		font-family: "Neuton";
+		font-weight: 400;
+
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+	div.help-block {
+		color: #f0f0f0;
+		font-weight: 200;
+		font-size: 13px;
+
+		@media (max-width: 767px) {
+			position: absolute;
+			bottom: 0
+		}
+
+
+	}
+
+	@media (max-width: 767px) {
+		margin: 0 0 10px 0;
+	}	
+}
+#sexy-login-login-form form {
+	margin-bottom: 10px;
+}
+#sexy-login-login-form p {
+	margin-bottom: 0px;
+	line-height: 28px;
+}
+#sexy-login-login-form .btn-group {
+	margin-top: 5px;
+	.btn {
+		font-size: 12px;
+		padding: 0 5px;
+	}
+
+	@media (max-width: 767px) {
+		margin-top: 1px;
+	}
+}
+
+#sexy-login-login-form input {
+	&[type=text],
+	&[type=password] {
+		margin: 0;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 11px;
+		font-size: 10px;
+
+		@media (max-width: 767px) {
+			width: 32%;
+			float: left;
+			margin-right: 5px;		
+		}
+	}
+}
+
+
+.staff-member-info-wrap {
+	width: 100%;
+	margin: 0;
+}
+.staff-member {
+  float: left;
+  margin-right: 55px;
+  height: 250px;
+  width:  150px;
+  border: 0 !important;
+
+  &.odd {
+  	margin-top: 0 !important;
+  }
+} 
+
+div.entry-content h3.staff-member-name, div.entry-content h4.staff-member-position {
+margin: 0px;
+}
+
+img.staff-member-photo {
+height: 150px;
+background-image: url(images/no_photo.gif);
+
+}
+
+div.staff-member-info-wrap {
+	h3.staff-member-name {
+		font-size: 23px !important;
+		width: 100%;
+		display: block;
+		line-height: 28px !important;
+	}
+	h4.staff-member-position {
+		font-size: 18px !important;
+		line-height: 22px !important;
+	}
+	a.staff-member-email {
+		font-size: 12px !important;
+	}
+}
+
+.widget_em_widget {
+	ul {
+		list-style: none;
+		margin: 0;
+
+		li {
+			min-height: 70px;
+		}
+	}
+	.event-icon {
+	    float: left;
+	    margin-right: 10px;
+	    padding: 14px 10px 10px 10px;
+	    background: $accent-color;
+	    color: #eee;
+
+	    .event-day {
+		    font-size: 30px;
+		    font-weight: 100;
+		    text-align: center;
+		    width: 100%;
+		    display: block;	    
+	    }
+	    .event-month-year {
+		    margin-top: 5px;
+		    font-size: 12px;
+	    }
+	}
+	.event-title {
+		font-size: 20px;
+		line-height: 35px;	
+	}
+}

@@ -1,0 +1,145 @@
+@import "web-fonts";
+
+$experimental-support-for-svg: true;
+
+/*
+ Google Web Fonts
+ */
+@include web-font(('Neuton'), (400));
+
+/*
+	$color-scheme: set the color scheme for your project. Possible values are:
+		(i) 'two' - A single accent color on a base color. This option will
+		automatically adjust different elements colors to be variations on
+		the accent and base colors, as appropriate.
+
+	More options can be developed and added to the SASS later.
+*/
+$color-scheme: 'two';
+
+/*
+	$base-color: Set the base color for your project. Typically this will be
+	an off-black or off-white, but sometimes other values will be appropriate.
+*/
+$base-color: #031b47;
+/*
+	$accent-color: Set the accent color. Typically a bright color.
+*/
+$accent-color: #fdba31;
+
+/*
+	$slideshow-space: Set whether or not there is a space between
+	the slideshow and the feature text, and between the slideshow
+	and the header.
+*/
+$slideshow-space: 'false';
+
+/*
+	$photo-float: Set whether the photos in the list of posts on the front
+	page float 'left', 'right', or 'none'.
+*/
+$photo-float: 'right';
+
+/*
+	$use-header-image: Set whether or not this site uses a header image.
+	If it does, then override the header background with $header-background-color,
+	and set the position of the header image with $header-image-alignment.
+*/
+$user-header-image: 'true';
+$header-background-color: #444444;
+$header-image-alignment: center;
+
+/*
+	$use-block-shadows: Set whether the theme should apply a subtle shadow
+	underneath sidebar blocks and the main content column.
+*/
+$use-block-shadows: 'false';
+
+/************************************************************************
+ * Set default color scheme based on the variables that have been set
+ * above. Eventually, it would make sense to move this section into another file
+ */
+
+/* Set default body background color based on $base-color */
+
+$body-background-color: $base-color;
+@if lightness($base-color) > 50% {
+	$body-background-color: lighten($base-color, 20%);
+} @else {
+	$body-background-color: darken($base-color, 20%);
+}
+
+/* Set default link color based on $accent-color */
+$body-link-color: $accent-color;
+@if lightness($accent-color) > 25% {
+	$body-link-color: darken($accent-color, 10%);
+} @else {
+	$body-link-color: saturate(lighten($accent-color, 15%), 50%);
+}
+
+/* Set default color for h-level elements based on $accent-color */
+$body-h-color: $accent-color;
+
+/* Set default color for feature base, based on $base-color */
+$feature-base-color: #fff;
+@if lightness($base-color) > 50% {
+	$feature-base-color: #333;
+} @else {
+	$feature-base-color: #fff;
+}
+
+/* Set default feature h color based on $accent-color and $base-color */
+$feature-h-color: #fff;
+@if lightness($accent-color) > 50% {
+	$feature-h-color: $accent-color;
+} @else {
+	$feature-h-color: $base-color;
+}
+
+/* Set default feature text color based on $feature-base-color */
+$feature-text-color: #444;
+@if lightness($feature-base-color) > 50% {
+	$feature-text-color: #444;
+} @else {
+	$feature-text-color: #f7f7f7;
+}
+
+/* Set default navbar link color based on $base-color */
+$navbar-link-color: $base-color;
+@if lightness($base-color) > 50% {
+	$navbar-link-color: darken($base-color, 80%);
+} @else {
+	$navbar-link-color: lighten($base-color, 80%);
+}
+
+/* Set the header and footer colors based on $accent-color */
+$header-footer-color: $accent-color;
+
+/* Set the navbar color based on $base-color */
+
+$navbar-color: $base-color;
+
+
+/* Set the sidebar block background color based on $base-color */
+$sidebar-block-background-color: lighten($base-color, 60%);
+@if lightness($base-color) > 50% {
+	$sidebar-block-background-color: lighten($base-color, 15%);
+}
+
+/* Set the sidebar link color based on $accent-color */
+$sidebar-link-color: $accent-color;
+
+/* Set the sidebar title color based on $accent-color */
+$sidebar-title-color: $accent-color;
+
+/**************** END **************************************************/
+
+/************************************************************************
+ * Overrides
+ */
+$body-background-color: desaturate(lighten($base-color, 70%), 30%);
+$navbar-link-color: #f0f0f0;
+$sidebar-block-background-color: desaturate(lighten($base-color, 90%), 30%);
+$sidebar-link-color: $base-color;
+
+/**************** END **************************************************/

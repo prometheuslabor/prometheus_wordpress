@@ -1,0 +1,12 @@
+/*
+Theme Name:     Prometheus Wordpress
+Theme URI:      http://example.com/
+Description:    The Prometheus Wordpress theme is a theme for clients of Prometheus Labor Communications, Inc.
+Author:         morrissinger
+Author URI:     http://www.prometheuslabor.com/
+Template:       the-bootstrap                             
+Version:        1.0
+*/
+
+@import url("../the-bootstrap/style.css");
+@import url("css/style.css");

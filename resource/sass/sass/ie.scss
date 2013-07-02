@@ -1,0 +1,44 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+
+@import "variables";
+
+html {
+	body {
+		header#branding {
+			.navbar {
+				.navbar-inner {
+					background: $navbar-color;
+					filter: none;
+					
+					.nav-collapse {
+						a.btn-navbar {
+							@if lightness($navbar-color) > 50% {
+								background: lighten($navbar-color, 5%);
+								filter: none;
+							} @else {
+								background-color: darken($navbar-color, 10%);
+								filter: none;
+							} 						
+						}
+						ul.nav {
+							li.menu-item {
+								ul.dropdown-menu {
+									background: lighten($navbar-color, 5%);
+									filter: none;
+									a {
+										background: $navbar-color;
+										filter: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

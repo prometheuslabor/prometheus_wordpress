@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* Conditional Stylesheet to fix bugs in IE7  */
+
+.main-menu-item {
+	min-width: 20px;
+	display: inline-block;
+	margin: 3px;
+	background-color: red;
+}
+#top-navigation-primary .main-menu-item {
+	display: inline; 
+	margin-bottom: 0;
+	float: left;
+}
+#top-navigation-secondary .main-menu-item {
+	display: inline; 
+	margin-top: 0;
+	float: right;
+}
+.sub-menu {
+	position:absolute;
+	visibility:hidden;
+	left:-99999px;
+	top:-99999px;
+}
+.sub-menu-item {
+	position:absolute;
+	visibility:hidden;
+	left:-99999px;
+	top:-99999px;
+}

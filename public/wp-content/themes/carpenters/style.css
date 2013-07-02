@@ -1,0 +1,16 @@
+/*
+Theme Name: Carpenters Union 156 - Wooden Theme
+Theme URI: http://www.ubc156.org/themes/carpenters
+Version: 3.7
+Description: 2 Column theme from NWWT
+Author: NW Web Technologies, LLC
+Author URI: http://www.nwwebtechnologies.com
+*/
+
+img#about-image { float: left; margin: 3px 8px 8px 0px; }
+
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.home-post-content { float: none !important; width: auto !important; }

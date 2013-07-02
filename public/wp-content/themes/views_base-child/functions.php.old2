@@ -1,0 +1,12 @@
+<?php
+
+if(!class_exists('class_base_theme_child')) {
+	require_once('class_base_theme_child.php');
+}
+if(!isset($class_base_theme_child))
+{
+	$class_base_theme_child = new class_base_theme_child();
+}
+
+
+?>
