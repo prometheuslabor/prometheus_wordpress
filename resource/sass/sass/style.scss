@@ -482,6 +482,10 @@ html {
 											border-bottom-color: desaturate(lighten($navbar-color, 10%), 5%);
 										}
 									}
+
+									&.dropdown-toggle {
+										cursor: default;
+									}
 								}
 								a:hover,
 								&.open a,
