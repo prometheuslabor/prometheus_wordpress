@@ -62,6 +62,24 @@ if ( function_exists('register_sidebar') ) {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+
+	register_sidebar( array(
+		'name'			=>	__( 'Front Left Sidebar', 'prometheus_wp' ),
+		'id'			=>	'front-left',
+		'before_widget'	=>	'<aside id="%1$s" class="widget well %2$s">',
+		'after_widget'	=>	'</aside>',
+		'before_title'	=>	'<h2 class="widget-title">',
+		'after_title'	=>	'</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'			=>	__( 'Front Right Sidebar', 'prometheus_wp' ),
+		'id'			=>	'front-right',
+		'before_widget'	=>	'<aside id="%1$s" class="widget well %2$s">',
+		'after_widget'	=>	'</aside>',
+		'before_title'	=>	'<h2 class="widget-title">',
+		'after_title'	=>	'</h2>',
+	) );	
 }
 
 function prometheus_wp_scripts()
@@ -109,22 +127,57 @@ endif;
 
 function prometheus_wp_customize_register( $wp_customize )
 {
+	// Colophon
+	$wp_customize->add_section( 'colophon' , array(
+	    'title'      => __('Colophon','prometheus_wp'),
+	    'priority'   => 30,
+	) );
+
+	// Colophon (colophon)
 	$wp_customize->add_setting( 'prometheus_wp_show_colophon' , array(
 	    'default'     => true,
 	    'transport'   => 'refresh',
 	) );
 
-	$wp_customize->add_section( 'prometheus_wp' , array(
-	    'title'      => __('Prometheus Theme','prometheus_wp'),
-	    'priority'   => 30,
-	) );
-
 	$wp_customize->add_control( 'prometheus_wp_show_colophon', array(
 		'label'		=>	__( 'Show Prometheus colophon.', 'prometheus-wp' ),
-		'section'	=>	'prometheus_wp',
+		'section'	=>	'colophon',
 		'settings'	=>	'prometheus_wp_show_colophon',
 		'type'		=>	'checkbox',
 	) );
+
+	// Front Page Layout (static_front_page)
+	$wp_customize->add_setting( 'prometheus_wp_front_page_layout' , array(
+	    'default'     => true,
+	    'transport'   => 'refresh',
+	    'type'		  => 'option',
+	) );
+
+	$wp_customize->add_control( 'prometheus_wp_front_page_layout', array(
+		'label'		=>	__( 'Front page layout', 'prometheus-wp' ),
+		'section'	=>	'static_front_page',
+		'settings'	=>	'prometheus_wp_front_page_layout',
+		'type'		=>	'select',
+        'choices'    => array(
+            'normal' => 'Normal',
+            'three_column' => 'Three-column'
+        ),		
+	) );
+
+	// Slideshow and Feature Blocks (static_front_page)
+	$wp_customize->add_setting( 'prometheus_wp_show_slideshow_feature' , array(
+	    'default'     => true,
+	    'transport'   => 'refresh',
+	) );
+
+	$wp_customize->add_control( 'prometheus_wp_show_slideshow_feature', array(
+		'label'		=>	__( 'Show slideshow and feature block.', 'prometheus-wp' ),
+		'section'	=>	'static_front_page',
+		'settings'	=>	'prometheus_wp_show_slideshow_feature',
+		'type'		=>	'checkbox',
+	) );
+
+
 }
 add_action( 'customize_register', 'prometheus_wp_customize_register' );
 

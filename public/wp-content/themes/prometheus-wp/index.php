@@ -17,42 +17,76 @@
 get_header(); ?>
 
 <?php if (is_front_page()) :?>
-	<section class="front-content">
-		<div class="span6" id="slideshow">
-			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Front Page Slideshow') ) : ?>
-			<?php endif; ?>
-		</div>
-		<div class="span6" id="feature">
-			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Front Page Feature') ) : ?>
-			<?php endif; ?>
-		</div>
-		<div class="clearfix"></div>
-	</section>
+	<?php if(get_theme_mod('prometheus_wp_show_slideshow_feature')) :?>
+		<section class="front-content">
+			<div class="span6" id="slideshow">
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Front Page Slideshow') ) : ?>
+				<?php endif; ?>
+			</div>
+			<div class="span6" id="feature">
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Front Page Feature') ) : ?>
+				<?php endif; ?>
+			</div>
+			<div class="clearfix"></div>
+		</section>
+	<?php else :?>
+		<div style="height: 40px;"></div>
+	<?php endif; ?>
 <?php endif; ?>
 
-<section id="primary" class="span8">
-	<?php tha_content_before(); ?>
-	<div id="content" role="main">
-		<?php tha_content_top();
-		
-		if ( have_posts() ) {
-			while ( have_posts() ) {
-				the_post();
-				get_template_part( '/partials/content', get_post_format() );
+
+<? if (is_front_page() && (get_option('prometheus_wp_front_page_layout') == 'three_column')) : ?>
+	<?php get_sidebar('front-left'); ?>
+		<section id="primary" class="span6">
+			<?php tha_content_before(); ?>
+			<div id="content" role="main">
+				<?php tha_content_top();
+				
+				if ( have_posts() ) {
+					while ( have_posts() ) {
+						the_post();
+						get_template_part( '/partials/content', get_post_format() );
+					}
+					the_bootstrap_content_nav( 'nav-below' );
+				}
+				else {
+					get_template_part( '/partials/content', 'not-found' );
+				}
+			
+				tha_content_bottom(); ?>
+			</div><!-- #content -->
+			<?php tha_content_after(); ?>
+		</section><!-- #primary -->
+	<?php get_sidebar('front-right'); ?>
+<? else : ?>
+
+	<section id="primary" class="span8">
+		<?php tha_content_before(); ?>
+		<div id="content" role="main">
+			<?php tha_content_top();
+			
+			if ( have_posts() ) {
+				while ( have_posts() ) {
+					the_post();
+					get_template_part( '/partials/content', get_post_format() );
+				}
+				the_bootstrap_content_nav( 'nav-below' );
 			}
-			the_bootstrap_content_nav( 'nav-below' );
-		}
-		else {
-			get_template_part( '/partials/content', 'not-found' );
-		}
-	
-		tha_content_bottom(); ?>
-	</div><!-- #content -->
-	<?php tha_content_after(); ?>
-</section><!-- #primary -->
+			else {
+				get_template_part( '/partials/content', 'not-found' );
+			}
+		
+			tha_content_bottom(); ?>
+		</div><!-- #content -->
+		<?php tha_content_after(); ?>
+	</section><!-- #primary -->
+	<?php get_sidebar(); ?>
+
+<? endif; ?>
+
 
 <?php
-get_sidebar();
+
 get_footer();
 
 

@@ -34,7 +34,7 @@ html {
 			padding-top: 0;
 			padding-bottom: 0;
 			background: none;
-			#primary, #secondary, #slideshow, #feature {
+			#primary, #secondary, .secondary, #slideshow, #feature {
 				h1 {
 					font-size: 56px;
 					line-height: 60px;
@@ -314,7 +314,7 @@ html {
 					}
 				}
 			}
-			#secondary {
+			#secondary, .secondary {
 				aside {
 					a {
 						color: $sidebar-link-color;

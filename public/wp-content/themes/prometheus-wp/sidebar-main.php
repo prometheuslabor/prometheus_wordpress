@@ -7,7 +7,7 @@
  */
 
 tha_sidebars_before(); ?>
-<section id="secondary" class="widget-area span4" role="complementary">
+<section id="secondary" class="widget-area span3" role="complementary">
 	<?php tha_sidebar_top();
 	
 	if ( ! dynamic_sidebar( 'main' ) ) {
