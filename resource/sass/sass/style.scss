@@ -786,10 +786,10 @@ div.staff-member-info-wrap {
 
 
 .megaMenuContainer {
-	float: none;
+	float: none !important;
 	ul.megaMenu {
 		width: 100%;	
-		float: none;
+		float: none !important;
 	}
 }
 
