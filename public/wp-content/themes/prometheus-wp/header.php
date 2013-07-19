@@ -27,7 +27,12 @@
 		<![endif]-->
 	</head>
 	
-	<body <?php body_class(); ?>>
+	<?php if (is_front_page()) :?>
+		<body <?php body_class('front'); ?>>
+	<?php else :?>
+		<body <?php body_class(); ?>>
+	<?php endif; ?>	
+	
 		<?php tha_header_before(); ?>
 		<header id="branding" role="banner" class="span12">
 			<?php tha_header_top();
