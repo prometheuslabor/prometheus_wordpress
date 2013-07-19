@@ -785,6 +785,14 @@ div.staff-member-info-wrap {
 }
 
 
-ul.megaMenu {
-	width: 100%;	
+.megaMenuContainer {
+	float: none;
+	ul.megaMenu {
+		width: 100%;	
+		float: none;
+	}
+}
+
+#ubermenu-originator {
+	display: none;
 }
