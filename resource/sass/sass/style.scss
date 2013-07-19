@@ -262,11 +262,6 @@ html {
 				}
 			}			
 			#primary {
-				body.front.three-column & {
-					float: left !important;
-					margin-left: 20px !important;
-					margin-right: 0 !important;					
-				}
 				background: #fff;
 				margin-bottom: 20px;
 
@@ -802,4 +797,10 @@ div.staff-member-info-wrap {
 
 #ubermenu-originator {
 	display: none;
+}
+
+body.front.three-column #primary {
+	float: left;
+	margin-left: 20px;
+	margin-right: 0;					
 }
