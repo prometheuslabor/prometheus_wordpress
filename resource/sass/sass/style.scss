@@ -262,6 +262,9 @@ html {
 				}
 			}			
 			#primary {
+				body.front.three-column & {
+					float: left;
+				}
 				background: #fff;
 				margin-bottom: 20px;
 

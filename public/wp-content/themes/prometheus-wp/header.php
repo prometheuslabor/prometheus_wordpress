@@ -26,13 +26,15 @@
 			<link rel="stylesheet" type="text/css" href="<?php print get_stylesheet_directory_uri() . '/css/' ?>ie.css" />
 		<![endif]-->
 	</head>
-	
-	<?php if (is_front_page()) :?>
+
+	<?php if (is_front_page() && (get_option('prometheus_wp_front_page_layout') == 'three_column')) :?>
+		<body <?php body_class('front three-column'); ?>>
+	<?php elseif (is_front_page()) :?>
 		<body <?php body_class('front'); ?>>
 	<?php else :?>
 		<body <?php body_class(); ?>>
 	<?php endif; ?>	
-	
+
 		<?php tha_header_before(); ?>
 		<header id="branding" role="banner" class="span12">
 			<?php tha_header_top();
