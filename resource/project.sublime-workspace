@@ -1,0 +1,275 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/morrissinger/Sites/bewg/prelitigation/config/application.rb",
+		"/Users/morrissinger/Sites/bewg/prelitigation/app/views/layouts/application.html.erb",
+		"/Users/morrissinger/Sites/bewg/prelitigation/app/assets/stylesheets/bootstrap_and_overrides.css.less",
+		"/Users/morrissinger/Sites/bewg/prelitigation/app/views/matters/new.html.erb",
+		"/Users/morrissinger/Sites/bewg/prelitigation/app/assets/stylesheets/scaffolds.css.scss",
+		"/Users/morrissinger/Sites/bewg/prelitigation/app/controllers/application_controller.rb",
+		"/Users/morrissinger/Sites/bewg/prelitigation/app/controllers/matters_controller.rb",
+		"/Users/morrissinger/Sites/bewg/prelitigation/Gemfile",
+		"/Users/morrissinger/Sites/bewg/prelitigation/config/routes.rb",
+		"/Users/morrissinger/Sites/bewg/prelitigation/app/views/matters/_form.html.erb",
+		"/Users/morrissinger/Sites/bewg/prelitigation/app/models/ability.rb",
+		"/Users/morrissinger/Sites/bewg/prelitigation/app/views/matters/index.html.erb",
+		"/Users/morrissinger/Sites/bewg/prelitigation/app/controllers/profiles_controller.rb",
+		"/Users/morrissinger/Sites/bewg/prelitigation/config/database.yml",
+		"/Users/morrissinger/Sites/bewg/prelitigation/db/schema.rb",
+		"/Users/morrissinger/Sites/bewg/prelitigation/app/models/user_session.rb",
+		"/Users/morrissinger/Sites/bewg/prelitigation/app/models/matter.rb",
+		"/Users/morrissinger/Sites/bewg/prelitigation/app/models/user.rb",
+		"/Users/morrissinger/Sites/bewg/prelitigation/app/models/profile.rb",
+		"/Users/morrissinger/Sites/bewg/prelitigation/app/controllers/user_sessions_controller.rb",
+		"/Users/morrissinger/Sites/bewg/prelitigation/app/views/profiles/new.html.erb",
+		"/Users/morrissinger/Sites/bewg/prelitigation/app/views/profiles/_form.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/models/user.rb",
+		"/Users/morrissinger/Sites/bewg/prelitigation/app/views/user_sessions/new.html.erb",
+		"/Users/morrissinger/Sites/bewg/prelitigation/lib/assets/expertise.yml",
+		"/Users/morrissinger/Sites/bewg/prelitigation/config/initializers/expertise.rb",
+		"/Users/morrissinger/Sites/bewg/prelitigation/app/views/users/_form.html.erb",
+		"/Users/morrissinger/Sites/ilcaawards/app/views/layouts/_organizations_selector.html.erb",
+		"/Users/morrissinger/Sites/ilcaawards/config/initializers/settings.rb",
+		"/Users/morrissinger/Sites/bewg/experts_invoice/config/database.yml",
+		"/Users/morrissinger/Sites/myunionjob/config/database.yml",
+		"/Users/morrissinger/Sites/myunionjob/app/views/people/_person.html.erb",
+		"/Users/morrissinger/XCodeApplications/UnionConnect/fullSencha/resources/sass/app.scss",
+		"/Users/morrissinger/XCodeApplications/UnionConnect/fullSencha/app/util/Settings.js",
+		"/Users/morrissinger/Sites/myunionjob/app/views/admin/users/_form.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/controllers/admin/users_controller.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/layouts/dashboard.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/layouts/application.html.erb",
+		"/Users/morrissinger/Downloads/sampleYAMLFile (1).yml",
+		"/Users/morrissinger/Sites/myunionjob/app/assets/stylesheets/dashboard.css.scss",
+		"/Users/morrissinger/Sites/myunionjob/app/assets/javascripts/events.js",
+		"/Users/morrissinger/Sites/myunionjob/app/controllers/angular/events_controller.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/controllers/angular/bargaining_units_controller.rb",
+		"/Users/morrissinger/Sites/myunionjob/config/routes.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/assets/javascripts/bargaining_units.js",
+		"/Users/morrissinger/Sites/myunionjob/app/views/bargaining_units/_bargaining_unit.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/bargaining_units/index.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/assets/javascripts/application.js",
+		"/Users/morrissinger/Sites/myunionjob/app/controllers/bargaining_units_controller.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/directories/_pill_contents.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/Gemfile",
+		"/Users/morrissinger/Sites/myunionjob/app/views/events/_pill_contents.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/feeds/index.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/locations/_pill_contents.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/controllers/directories_controller.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/controllers/events_controller.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/controllers/feeds_controller.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/controllers/locations_controller.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/controllers/people_controller.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/directories/index.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/people/manage_directories.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/locals/_form.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/bargaining_units/_form.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/models/ability.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/controllers/users_controller.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/controllers/locals_controller.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/models/bargaining_unit.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/models/directory.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/models/event.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/models/feed.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/models/local.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/models/location.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/models/person.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/assets/javascripts/myunionjob.js",
+		"/Users/morrissinger/Sites/myunionjob/app/controllers/user_sessions_controller.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/assets/javascripts/dashboard.js",
+		"/Users/morrissinger/Sites/myunionjob/app/views/locations/_actions.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/events/dashboard/_events.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/events/_actions.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/events/_event.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/events/_event_wrapper.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/events/index.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/locations/_location.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/locations/_location_wrapper.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/locations/index.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/directories/_directory_wrapper.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/events/_pills.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/locations/_pills.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/feeds/dashboard/_show.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/layouts/dashboard/_sidebar.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/feeds/_feed.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/events/dashboard/_show.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/directories/_directory.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/directories/_person.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/directories/_pill_content.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/directories/_actions.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/people/index.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/people/dashboard/_show.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/dashboard/_actions.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/directories/actions.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/bargaining_units/_contract_article_fields.html.erb!",
+		"/Users/morrissinger/Sites/myunionjob/app/views/directories/dashboard/_pill_contents.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/directories/dashboard/_pills.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/controllers/application_controller.rb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/layouts/dashboard/_tabs.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/directories/dashboard/_show.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/dashboard/_tabs.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/views/locals/show.html.erb",
+		"/Users/morrissinger/Sites/myunionjob/app/controllers/pages_controller.rb",
+		"/Users/morrissinger/XCodeApplications/UnionConnect/fullSencha/app.js",
+		"/Users/morrissinger/XCodeApplications/UnionConnect/fullSencha/index.html",
+		"/Users/morrissinger/XCodeApplications/UnionConnect/fullSencha/loader.js",
+		"/Users/morrissinger/XCodeApplications/UnionConnect/fullSencha/build/basicSencha/package/loader.js",
+		"/Users/morrissinger/XCodeApplications/UnionConnect/fullSencha/app/view/main/HiddenPanel.js",
+		"/Users/morrissinger/XCodeApplications/UnionConnect/fullSencha/app/view/local/Tabs.js",
+		"/Users/morrissinger/XCodeApplications/UnionConnect/fullSencha/app/controller/main/Main.js",
+		"/Users/morrissinger/XCodeApplications/UnionConnect/fullSencha/app/view/main/news/News.js",
+		"/Users/morrissinger/XCodeApplications/UnionConnect/fullSencha/app/view/main/event/Events.js",
+		"/Users/morrissinger/XCodeApplications/UnionConnect/fullSencha/app/view/local/Active.js",
+		"/Users/morrissinger/XCodeApplications/UnionConnect/fullSencha/app/view/local/Available.js",
+		"/Users/morrissinger/Desktop/test.html",
+		"/Users/morrissinger/XCodeApplications/UnionConnect/www/app/view/main/News.js",
+		"/Users/morrissinger/XCodeApplications/UnionConnect/www/resources/sass/app.scss",
+		"/Users/morrissinger/XCodeApplications/UnionConnect/www/app/view/main/Main.js",
+		"/Users/morrissinger/XCodeApplications/UnionConnect/www/app/view/local/Tabs.js",
+		"/Users/morrissinger/XCodeApplications/UnionConnect/www/app/view/event/List.js",
+		"/Users/morrissinger/XCodeApplications/UnionConnect/www/app.js",
+		"/Users/morrissinger/XCodeApplications/UnionConnect/www/app/view/main/Grievance.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Preliti",
+			"dashboard",
+			"item",
+			"Ext",
+			"Loader included",
+			"loader included",
+			"changeProxy",
+			"event",
+			"innerhtml",
+			"news",
+			"newslist",
+			"newslist-feed-item-title",
+			"news",
+			"image"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 284.0,
+	"status_bar_visible": true
+}
