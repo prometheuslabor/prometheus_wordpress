@@ -58,6 +58,25 @@ get_header(); ?>
 			<?php tha_content_after(); ?>
 		</section><!-- #primary -->
 	<?php get_sidebar('front-right'); ?>
+<? elseif (is_front_page() && (get_option('prometheus_wp_front_page_layout') == 'three_features')) : ?>
+	<section class="span4">
+		<div class="home-featured">
+			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Home Featured Left') ) : ?>
+			<?php endif; ?>	
+		</div>
+	</section>
+	<section class="span4">
+		<div class="home-featured">
+			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Home Featured Center') ) : ?>
+			<?php endif; ?>	
+		</div>
+	</section>
+	<section class="span4" >
+		<div class="home-featured">
+			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Home Featured Right') ) : ?>
+			<?php endif; ?>	
+		</div>
+	</section>
 <? else : ?>
 
 	<section id="primary" class="span8">

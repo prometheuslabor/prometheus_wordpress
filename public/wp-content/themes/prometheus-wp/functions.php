@@ -80,6 +80,32 @@ if ( function_exists('register_sidebar') ) {
 		'before_title'	=>	'<h2 class="widget-title">',
 		'after_title'	=>	'</h2>',
 	) );	
+
+
+	register_sidebar( array(
+		'name'			=>	__( 'Home Featured Left', 'prometheus_wp' ),
+		'id'			=>	'home-featured-left',
+		'before_widget'	=>	'<aside id="%1$s" class="widget well %2$s">',
+		'after_widget'	=>	'</aside>',
+		'before_title'	=>	'<h2 class="widget-title">',
+		'after_title'	=>	'</h2>',
+	) );
+	register_sidebar( array(
+		'name'			=>	__( 'Home Featured Center', 'prometheus_wp' ),
+		'id'			=>	'home-featured-center',
+		'before_widget'	=>	'<aside id="%1$s" class="widget well %2$s">',
+		'after_widget'	=>	'</aside>',
+		'before_title'	=>	'<h2 class="widget-title">',
+		'after_title'	=>	'</h2>',
+	) );
+	register_sidebar( array(
+		'name'			=>	__( 'Home Featured Right', 'prometheus_wp' ),
+		'id'			=>	'home-featured-right',
+		'before_widget'	=>	'<aside id="%1$s" class="widget well %2$s">',
+		'after_widget'	=>	'</aside>',
+		'before_title'	=>	'<h2 class="widget-title">',
+		'after_title'	=>	'</h2>',
+	) );
 }
 
 function prometheus_wp_scripts()
@@ -159,8 +185,9 @@ function prometheus_wp_customize_register( $wp_customize )
 		'settings'	=>	'prometheus_wp_front_page_layout',
 		'type'		=>	'select',
         'choices'    => array(
-            'normal' => 'Normal',
-            'three_column' => 'Three-column'
+            'normal' => 'Two columns',
+            'three_column'		=> 'Three columns',
+            'three_features'	=> 'Three features'
         ),		
 	) );
 
