@@ -7,38 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "sass/sass/variables.scss",
-			"settings":
-			{
-				"buffer_size": 4256,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/morrissinger/Sites/prometheus-wp-sites/gursky/public/wp-content/themes/prometheus-wp/index.php",
-			"settings":
-			{
-				"buffer_size": 3213,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/morrissinger/Sites/prometheus-wp-sites/gursky/public/wp-content/themes/prometheus-wp/functions.php",
-			"settings":
-			{
-				"buffer_size": 8056,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "sass/sass/style.scss",
-			"settings":
-			{
-				"buffer_size": 19019,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -64,9 +32,12 @@
 	},
 	"file_history":
 	[
+		"/Users/morrissinger/Sites/prometheus-wp-sites/gursky/resource/sass/sass/style.scss",
+		"/Users/morrissinger/Sites/prometheus-wp-sites/gursky/public/wp-content/themes/prometheus-wp/functions.php",
+		"/Users/morrissinger/Sites/prometheus-wp-sites/gursky/public/wp-content/themes/prometheus-wp/index.php",
+		"/Users/morrissinger/Sites/prometheus-wp-sites/gursky/resource/sass/sass/variables.scss",
 		"/Users/morrissinger/Sites/prometheus-wp-sites/gursky/public/wp-content/themes/prometheus-wp/style.css",
 		"/Users/morrissinger/Sites/prometheus-wp-sites/gursky/public/wp-content/themes/prometheus-wp/single.php",
-		"/Users/morrissinger/Sites/prometheus-wp-sites/gursky/resource/sass/sass/style.scss",
 		"/Users/morrissinger/Desktop/fake.html",
 		"/Users/morrissinger/Sites/bewg/prelitigation/spec/spec_helper.rb",
 		"/Users/morrissinger/Sites/bewg/prelitigation/app/models/ability.rb",
@@ -188,10 +159,7 @@
 		"/Users/morrissinger/Sites/myunionjob/app/assets/javascripts/events.js",
 		"/Users/morrissinger/Sites/myunionjob/app/controllers/angular/events_controller.rb",
 		"/Users/morrissinger/Sites/myunionjob/app/controllers/angular/bargaining_units_controller.rb",
-		"/Users/morrissinger/Sites/myunionjob/config/routes.rb",
-		"/Users/morrissinger/Sites/myunionjob/app/assets/javascripts/bargaining_units.js",
-		"/Users/morrissinger/Sites/myunionjob/app/views/bargaining_units/_bargaining_unit.erb",
-		"/Users/morrissinger/Sites/myunionjob/app/views/bargaining_units/index.html.erb"
+		"/Users/morrissinger/Sites/myunionjob/config/routes.rb"
 	],
 	"find":
 	{
@@ -253,117 +221,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "sass/sass/variables.scss",
-					"settings":
-					{
-						"buffer_size": 4256,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								921,
-								921
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 311.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/morrissinger/Sites/prometheus-wp-sites/gursky/public/wp-content/themes/prometheus-wp/index.php",
-					"settings":
-					{
-						"buffer_size": 3213,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1936,
-								1936
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 736.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/Users/morrissinger/Sites/prometheus-wp-sites/gursky/public/wp-content/themes/prometheus-wp/functions.php",
-					"settings":
-					{
-						"buffer_size": 8056,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3271,
-								3289
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 623.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "sass/sass/style.scss",
-					"settings":
-					{
-						"buffer_size": 19019,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9959,
-								9959
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 4826.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
