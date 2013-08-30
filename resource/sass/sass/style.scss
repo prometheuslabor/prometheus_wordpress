@@ -114,8 +114,8 @@ html {
 				}
 				h1, h2, h3, h4, h5, h6,
 				h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-					font-family: "Neuton";
-					font-weight: 400;
+					font-family: "Helvetica Neue", Helvetica, Ariel, sans-serif;
+					font-weight: 100;
 					color: $body-h-color;
 					letter-spacing: -1px;
 
@@ -698,8 +698,8 @@ html {
 	h4 {
 		font-size: 28px;
 		color: #fafafa;
-		font-family: "Neuton";
-		font-weight: 400;
+		font-family: "Helvetica Neue", Helvetica, Ariel, sans-serif;
+		font-weight: 100;
 
 		@media (max-width: 767px) {
 			display: none;
