@@ -454,7 +454,7 @@ html {
 		}
 		header#branding {
 			margin: -20px 0 20px 0;
-			padding-top: 20px;
+			padding-top: 0px;
 
 			@if $user-header-image == 'true' {
 				background: $header-background-color;
