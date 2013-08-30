@@ -36,4 +36,5 @@ define('DB_COLLATE', '');
 
 /**#@-*/
 
-
+define('WP_HOME','http://iamdistrict15.dev');
+define('WP_SITEURL','http://iamdistrict15.dev');

@@ -21,11 +21,11 @@ $color-scheme: 'two';
 	$base-color: Set the base color for your project. Typically this will be
 	an off-black or off-white, but sometimes other values will be appropriate.
 */
-$base-color: #5d141f;
+$base-color: #3885d5;
 /*
 	$accent-color: Set the accent color. Typically a bright color.
 */
-$accent-color: #5d141f;
+$accent-color: #3885d5;
 
 /*
 	$slideshow-space: Set whether or not there is a space between
@@ -46,7 +46,7 @@ $photo-float: 'right';
 	and set the position of the header image with $header-image-alignment.
 */
 $user-header-image: 'true';
-$header-background-color: #5d141f;
+$header-background-color: #0d0f24;
 $header-image-alignment: center;
 
 /*
@@ -137,10 +137,9 @@ $sidebar-title-color: $accent-color;
 /************************************************************************
  * Overrides
  */
-$body-background-color: #5d141f;
-$navbar-color: white;
-$navbar-link-color: #5d141f;
+$navbar-link-color: white;
 $sidebar-block-background-color: desaturate(lighten($base-color, 70%), 30%);
 $sidebar-link-color: $base-color;
-
+$feature-base-color: white;
+$feature-text-color: #333;
 /**************** END **************************************************/
