@@ -21,7 +21,7 @@ $color-scheme: 'two';
 	$base-color: Set the base color for your project. Typically this will be
 	an off-black or off-white, but sometimes other values will be appropriate.
 */
-$base-color: #3885d5;
+$base-color: #737574;
 /*
 	$accent-color: Set the accent color. Typically a bright color.
 */
@@ -142,4 +142,5 @@ $sidebar-block-background-color: desaturate(lighten($base-color, 70%), 30%);
 $sidebar-link-color: $base-color;
 $feature-base-color: white;
 $feature-text-color: #333;
+$navbar-color: #3784d4;
 /**************** END **************************************************/
