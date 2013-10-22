@@ -57,7 +57,7 @@ if ( function_exists('register_sidebar') ) {
 		'name' => __( 'Front Page Feature'),
 		'id' => 'feature',
 		'description' => __( 'Place a widget in the featured position front page of your site', 'prometheus-wp' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s" data-toggle="scaletext">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s" data-toggle="scaletext" data-scaletext-pelsselector="div.textwidget" data-scaletext-minpsize="12px" >',
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
