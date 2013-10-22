@@ -57,7 +57,7 @@ if ( function_exists('register_sidebar') ) {
 		'name' => __( 'Front Page Feature'),
 		'id' => 'feature',
 		'description' => __( 'Place a widget in the featured position front page of your site', 'prometheus-wp' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s jtextfill">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s" data-toggle="scaletext">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
@@ -114,7 +114,8 @@ function prometheus_wp_scripts()
    wp_enqueue_script('tw-hover-dropdown-activate', get_stylesheet_directory_uri() . '/js/hover.js',array('jquery'),'1.0',true);
    wp_enqueue_script('jquery-placeholder', get_stylesheet_directory_uri() . '/js/jquery.placeholder.min.js',array('jquery'),'1.0',false);
    wp_enqueue_script('jq-placeholder-activate', get_stylesheet_directory_uri() . '/js/placeholders.js',array('jquery'),'1.0',true);
-   wp_enqueue_script('textfill', get_stylesheet_directory_uri() . '/js/textfill.js',array('jquery'),'1.0',false);
+   wp_enqueue_script('scaletext', get_stylesheet_directory_uri() . '/js/scaletext.min.js',array('jquery'),'1.0',false);
+   wp_enqueue_script('activate-scaletext', get_stylesheet_directory_uri() . '/js/scaletext.do.js',array('jquery'),'1.0',true);
 
 }
 
