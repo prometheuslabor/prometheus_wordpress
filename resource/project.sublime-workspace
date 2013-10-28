@@ -8,10 +8,42 @@
 	"buffers":
 	[
 		{
+			"file": "sass/sass/variables.scss",
+			"settings":
+			{
+				"buffer_size": 4277,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "sass/sass/style.scss",
 			"settings":
 			{
-				"buffer_size": 19181,
+				"buffer_size": 19270,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/morrissinger/Sites/prometheus-wp-sites/iamdistrict15/public/wp-content/themes/prometheus-wp/functions.php",
+			"settings":
+			{
+				"buffer_size": 8280,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/morrissinger/Sites/prometheus-wp-sites/iamdistrict15/public/wp-content/themes/prometheus-wp/js/scaletext.do.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/morrissinger/Sites/prometheus-wp-sites/iamdistrict15/public/wp-content/themes/prometheus-wp/js/scaletext.min.js",
+			"settings":
+			{
+				"buffer_size": 6663,
 				"line_ending": "Unix"
 			}
 		}
@@ -40,6 +72,8 @@
 	},
 	"file_history":
 	[
+		"/Users/morrissinger/Sites/prometheus-wp-sites/iamdistrict15/public/wp-content/themes/prometheus-wp/js/scaletext.min.js",
+		"/Users/morrissinger/Sites/prometheus-wp-sites/iamdistrict15/resource/sass/sass/style.scss",
 		"/Users/morrissinger/Sites/prometheus-wp-sites/gursky/resource/sass/sass/style.scss",
 		"/Users/morrissinger/Sites/prometheus-wp-sites/gursky/public/wp-content/themes/prometheus-wp/functions.php",
 		"/Users/morrissinger/Sites/prometheus-wp-sites/gursky/public/wp-content/themes/prometheus-wp/index.php",
@@ -165,9 +199,7 @@
 		"/Users/morrissinger/Downloads/sampleYAMLFile (1).yml",
 		"/Users/morrissinger/Sites/myunionjob/app/assets/stylesheets/dashboard.css.scss",
 		"/Users/morrissinger/Sites/myunionjob/app/assets/javascripts/events.js",
-		"/Users/morrissinger/Sites/myunionjob/app/controllers/angular/events_controller.rb",
-		"/Users/morrissinger/Sites/myunionjob/app/controllers/angular/bargaining_units_controller.rb",
-		"/Users/morrissinger/Sites/myunionjob/config/routes.rb"
+		"/Users/morrissinger/Sites/myunionjob/app/controllers/angular/events_controller.rb"
 	],
 	"find":
 	{
@@ -186,6 +218,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"scaletext",
+			"js",
+			"$",
+			"jQuery",
 			"header-image",
 			"meta {",
 			"meta",
@@ -219,6 +255,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"jQuery",
+			"$",
 			"certifications"
 		],
 		"reverse": false,
@@ -230,23 +268,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "sass/sass/style.scss",
+					"file": "sass/sass/variables.scss",
 					"settings":
 					{
-						"buffer_size": 19181,
+						"buffer_size": 4277,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19172,
-								19172
+								645,
+								645
 							]
 						],
 						"settings":
@@ -255,7 +293,113 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 12710.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "sass/sass/style.scss",
+					"settings":
+					{
+						"buffer_size": 19270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18237,
+								18237
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 11757.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/morrissinger/Sites/prometheus-wp-sites/iamdistrict15/public/wp-content/themes/prometheus-wp/functions.php",
+					"settings":
+					{
+						"buffer_size": 8280,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2492,
+								2492
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 243.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/morrissinger/Sites/prometheus-wp-sites/iamdistrict15/public/wp-content/themes/prometheus-wp/js/scaletext.do.js",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/morrissinger/Sites/prometheus-wp-sites/iamdistrict15/public/wp-content/themes/prometheus-wp/js/scaletext.min.js",
+					"settings":
+					{
+						"buffer_size": 6663,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2520,
+								2520
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 18007.0,
+						"translation.y": 319.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

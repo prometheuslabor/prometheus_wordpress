@@ -877,3 +877,22 @@ body.front.three-column #primary {
 		display: none;
 	}
 }
+
+aside.widget_rss {
+	h2 {
+		img {
+			display: none;
+		}
+	}
+	ul {
+		li {
+			margin-bottom: 10px;
+			a.rsswidget {
+				display: block;
+				font-size: 18px;
+				font-weight: 100;
+				color: $accent-color
+			}
+		}
+	}
+}
